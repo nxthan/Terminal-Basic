@@ -1,0 +1,164 @@
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0: #839496;
+    --base1: #93a1a1;
+    --base2: #eee8d5;
+    --base3: #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+    --green: #859900;
+}
+
+/* elements */
+
+body {
+    background-color: var(--base03);
+    font-family: "Lucidia Console", monospace;
+    color: var(--base0);
+    font-size: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: "";
+}
+
+input {
+    background-color: var(--base03);
+    caret-color: var(--base0);
+    outline: none;
+    border: none;
+    color: var(--base0);
+    font-family: "Lucidia Console", monospace;
+    font-size: 20px;
+    padding-left: 5px;
+} 
+
+.terminal-screen {
+    overflow:hidden;
+    border: 5px solid var(--base00);
+    padding: 5px;
+}
+
+
+#outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+#search {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#search-text{
+    position: relative;
+    float: left;
+}
+#search-bar{
+    overflow: hidden;
+    background: var(--base03);
+    font-family: "Lucidia Console", monospace;
+}
+
+
+
+.links-container {
+    position: relative;
+    /* FOR SEARCH TO BE AT BOTTOM */
+    display: flex;
+    /* FOR LINKS TO BE IN COLUMNS */
+    height: 350px;
+}
+
+.main .tech {
+    position: relative;
+    float: right;
+    width: 200px;
+}
+
+.social, .varsity {
+    position: relative;
+    float: left;
+    width: 200px;
+}
+
+/* hyperlinks */
+
+a:link, a:visited {
+    color: var(--base0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* "syntax highlighting" */
+
+.unix-user, .PC-name {
+    color: var(--blue);
+}
+
+.unix-syntax {
+    color: var(--base0);
+}
+
+/* section headings */
+
+#main-h {
+    color: var(--magenta);
+}
+
+#varsity-h {
+    color: var(--green);
+}
+
+#social-h {
+    color: var(--orange);
+}
+
+#tech-h {
+    color: var(--cyan);
+}
+
+/* blinking cursor */
+
+.cursor {
+    animation: blinker 1s step-start infinite;
+    color: inherit;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
