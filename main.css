@@ -91,7 +91,7 @@ input {
     justify-content: space-around;
 }
 
-.main, .tech, .social, .varsity {
+.main, .tech, .social, .varsity, .media, .learning {
     width: auto;
     position: relative;
     padding: 10px;
@@ -111,6 +111,14 @@ input {
 
 .varsity {
     order:3;
+}
+
+.media{
+    order:4;
+}
+
+.learning{
+    order:5;
 }
 
 /* hyperlinks */
@@ -186,4 +194,14 @@ a:active {
 
 #tech-h {
     color: var(--cyan);
+}
+
+
+#learning-h {
+    color: var(--red);
+}
+
+
+#media-h {
+    color: var(--yellow);
 }
