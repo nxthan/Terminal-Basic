@@ -40,14 +40,13 @@ input {
     font-family: "Lucidia Console", monospace;
     font-size: 20px;
     padding-left: 5px;
-} 
+}
 
 .terminal-screen {
-    overflow:hidden;
+    overflow: hidden;
     border: 5px solid var(--base00);
     padding: 5px;
 }
-
 
 #outer {
     display: table;
@@ -69,40 +68,49 @@ input {
 
 #search {
     position: absolute;
+    display: flex;
     bottom: 0;
     left: 0;
     width: 100%;
 }
-#search-text{
-    position: relative;
-    float: left;
-}
-#search-bar{
+
+#search-bar {
+    order: 4;   
     overflow: hidden;
     background: var(--base03);
     font-family: "Lucidia Console", monospace;
+    display: flex;
 }
-
 
 
 .links-container {
     position: relative;
-    /* FOR SEARCH TO BE AT BOTTOM */
     display: flex;
-    /* FOR LINKS TO BE IN COLUMNS */
     height: 350px;
+    padding: 10px;
+    justify-content: space-around;
 }
 
-.main .tech {
+.main, .tech, .social, .varsity {
+    width: auto;
     position: relative;
-    float: right;
-    width: 200px;
+    padding: 10px;
 }
 
-.social, .varsity {
-    position: relative;
-    float: left;
-    width: 200px;
+.main{
+    order:0;
+}
+
+.tech {
+    order:1;
+}
+
+.social{
+    order:2;
+}
+
+.varsity {
+    order:3;
 }
 
 /* hyperlinks */
@@ -122,14 +130,44 @@ a:active {
     text-decoration: none;
 }
 
-/* "syntax highlighting" */
 
-.unix-user, .PC-name {
-    color: var(--blue);
+/* "syntax highlighting" */
+.user{
+    display: flex;
+}
+.unix-user{
+    color: var(--orange);
+    order: 0;
 }
 
-.unix-syntax {
+.unix-syntax1 {
     color: var(--base0);
+    order: 1;
+}
+
+.PC-name {
+    color: var(--blue);
+    order: 2;
+}
+
+.unix-syntax2 {
+    color: var(--base0);
+    order: 3;
+}
+
+
+/* blinking cursor */
+
+.cursor {
+    animation: blinker 1s step-start infinite;
+    color: var(--base0);
+    order: 4;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }
 
 /* section headings */
@@ -148,17 +186,4 @@ a:active {
 
 #tech-h {
     color: var(--cyan);
-}
-
-/* blinking cursor */
-
-.cursor {
-    animation: blinker 1s step-start infinite;
-    color: inherit;
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
 }
