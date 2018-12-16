@@ -1,9 +1,26 @@
+# Readme
 ## Terminal Basic
 
 A browser startpage heavily inspired by an original design by kopri@unixhub.net (which can be found [here](https://startpages.github.io/startpages/Startpage_kopri-nb/))
 
-no code was shared between the two. I treated this as a practice exercise. 
+no code was shared between the two. I treated this as a practice exercise. Everything was done from scratch.
 
-##### note:
+## Theming
+
+the following color shchemes are supported
+1. Solarized Dark 
+2. Gruvbox Dark
+
+In order to change the Theme simply uncomment the desired theme's css variables (in main.css) and comment out the currently active theme's css variables. 
+
+The css variables are found at the top of main.css
+
+``css 
+:root{
+	/* variables found here */
+}
+``
+
+## note:
 
 this was only tested with firefox quantum 63
