@@ -15,11 +15,11 @@ In order to change the Theme simply uncomment the desired theme's css variables 
 
 The css variables are found at the top of main.css
 
-``css 
+```css
 :root{
 	/* variables found here */
 }
-``
+```
 
 ## note:
 
