@@ -20,30 +20,18 @@
     */
     /*=====================================*/
     /* gruvbox dark */
-    --base03: #1d2021;
-    --base02: #282828;
-    --dark1: #3c3836;
-    --dark2: #504945;
-    --base01: #665c54;
+    --base04: #1D2021;
+    --base03: #282828;
+    --base02: #3c3836;
+    --dark1: #504945;
+    --dark2: #665c54;
+    --base01: #7c6f64;
     --base00: #7c6f64;
-    /* 
-    --dark4_256: #7c6f64;
-    --dark0_soft: #32302f; 
-    */
     --base0: #928374;
     --base1: #928374;
     --base2: #f9f5d7;
-    /* 
-    --light0: #fbf1c7; 
-    */
     --base3: #f2e5bc;
-    /* 
-    --light1: #ebdbb2;
-    --light2: #d5c4a1;
-    --light3: #bdae93;
-    --light4: #a89984;
-    --light4_256: #a89984; 
-    */
+
     --red: #fb4934;
     --green: #b8bb26;
     --yellow: #fabd2f;
