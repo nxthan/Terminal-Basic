@@ -128,10 +128,10 @@ input {
     display: flex;
     height: 350px;
     padding: 10px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.main, .tech, .social, .varsity, .media, .learning {
+.main, .tech, .social, .varsity, .media, .learning, .gaming {
     width: auto;
     position: relative;
     padding: 10px;
@@ -141,24 +141,28 @@ input {
     order: 0;
 }
 
-.media {
+.varsity {
     order: 1;
 }
 
-.social {
+.tech {
     order: 2;
 }
 
-.varsity {
+.programming {
     order: 3;
 }
 
-.tech {
+.social {
     order: 4;
 }
 
-.programming {
+.media {
     order: 5;
+}
+
+.gaming {
+    order: 6;
 }
 
 /* hyperlinks */
@@ -242,4 +246,8 @@ a:active {
 
 #media-h {
     color: var(--yellow);
+}
+
+#gaming-h {
+    color: var(--blue);
 }
