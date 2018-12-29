@@ -61,7 +61,7 @@
 /* elements */
 
 body {
-    background-color: var(--base03);
+    background-color: var(--base04);
     font-family: "Lucidia Console", monospace;
     color: var(--base0);
     font-size: 20px;
@@ -73,7 +73,7 @@ ul {
 }
 
 input {
-    background-color: var(--base03);
+    background-color: var(--base04);
     caret-color: var(--base0);
     outline: none;
     border: none;
@@ -118,7 +118,7 @@ input {
 #search-bar {
     order: 4;
     overflow: hidden;
-    background: var(--base03);
+    background: var(--base04);
     font-family: "Lucidia Console", monospace;
     display: flex;
 }
