@@ -31,7 +31,6 @@
     --base1: #928374;
     --base2: #f9f5d7;
     --base3: #f2e5bc;
-
     --red: #fb4934;
     --green: #b8bb26;
     --yellow: #fabd2f;
@@ -141,19 +140,19 @@ input {
     order: 0;
 }
 
-.varsity {
+.social {
     order: 1;
 }
 
-.tech {
+.varsity {
     order: 2;
 }
 
-.programming {
+.tech {
     order: 3;
 }
 
-.social {
+.programming {
     order: 4;
 }
 
