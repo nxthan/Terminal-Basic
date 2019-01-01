@@ -3,6 +3,6 @@
     "command": "Firefox",
     "windows": {
         "command": "firefox"
-    },
+    }, 
     "args": ["${file}"]
 }
