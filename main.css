@@ -58,10 +58,11 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .links-container {
         flex-direction: column !important;
         order: 2 !important;        
+        /* width: 100vw !important;  */
     }
     .terminal-screen{
         border: none !important;
@@ -114,6 +115,7 @@ input {
     overflow: hidden;
     border: 5px solid var(--base00);
     padding: 5px;
+    
 }
 
 #outer {
@@ -131,7 +133,7 @@ input {
 #inner {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 85%;
 }
 
 
