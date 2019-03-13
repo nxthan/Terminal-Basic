@@ -1,13 +1,13 @@
 :root {
     font-family: "Lucidia Console", monospace;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 body, body * {
     margin: unset;
     box-sizing: unset;
     padding: unset;
-    font-size: 20px;
+    font-size: 16px;
     color: #839496;
     text-decoration: unset;
 }

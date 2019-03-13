@@ -92,7 +92,7 @@ body {
     background-color: var(--base04);
     font-family: "Lucidia Console", monospace;
     color: var(--base0);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 ul {
@@ -107,7 +107,7 @@ input {
     border: none;
     color: var(--base0);
     font-family: "Lucidia Console", monospace;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 5px;
 }
 
