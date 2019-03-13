@@ -23,4 +23,4 @@ The css variables are found at the top of main.css
 
 ## note:
 
-this was only tested with firefox quantum 63
+this was only tested with firefox quantum 
