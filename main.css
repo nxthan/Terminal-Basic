@@ -1,24 +1,24 @@
 :root {
     /* minimal nix */
-    --base03:	#000000 ;
-    --base02:	#b44127 ;
-    --base01:	#69844e ;
-    --base00:	#e3c190 ;
-    --base0: 	#4b698a ;
-    --base1: 	#c48787 ;
-    --base2: 	#92bed5 ;
-    --base3: 	#d2e9f1 ;
-    --yellow:	#8f8481 ;
-    --orange:	#d84f30 ;
-    --red: 	 	 #87aa64;
-    --magenta:	 #fff4d0;
-    --violet:	 #4b698a;
-    --blue:  	 #e09a9a;
-    --cyan:  	 #b7d7e9;
-    --green: 	 #ffffff; 
-	/* solarized dark */
-    /*   
-    --base03: #002b36;
+    --base03:	#000000;
+    --base02:	#ffffff;
+    --base01:	#000000;
+    --base00:	#b44127;
+    --base0: 	#69844e;
+    --base1: 	#e3ba7f;
+    --base2: 	#4b698a;
+    --base3: 	#c48787;
+    --yellow:	#92bed5;
+    --orange:	#d2e9f1;
+    --red: 	 	#8f8481;
+    --magenta:	#d84f30;
+    --violet:	#87aa64;
+    --blue:  	#ffe69b;
+    --cyan:  	#4b698a;
+    --green: 	#e09a9a; 
+	/* solarized#b7d7e9#0abdc6 dark */
+    /*          #ffffff#d7d7d5
+    --base03: #0#d7d7d502b36;
     --base02: #073642;
     --base01: #586e75;
     --base00: #657b83;
