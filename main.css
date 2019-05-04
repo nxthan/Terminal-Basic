@@ -1,5 +1,22 @@
 :root {
-    /* solarized dark */
+    /* minimal nix */
+    --base03:	#000000;
+    --base02:	#b44127;
+    --base01:	#6b874f;
+    --base00:	#e3c190;
+    --base0: 	#4b698a;
+    --base1: 	#ccadb0;
+    --base2: 	#92bed5;
+    --base3: 	#d2e9f1;
+    --yellow:	#8f8481;
+    --orange:	#d84f30;
+    --red: 	 	#87aa64;
+    --magenta:	#fff4d0;
+    --violet:	#4b698a;
+    --blue:  	#d4b4ec;
+    --cyan:  	#b7d7e9;
+    --green: 	#ffffff; 
+	/* solarized dark */
     /*   
     --base03: #002b36;
     --base02: #073642;
@@ -20,6 +37,7 @@
     */
     /*=====================================*/
     /* gruvbox dark */
+	/*
     --base04: #1D2021;
     --base03: #282828;
     --base02: #3c3836;
@@ -38,6 +56,7 @@
     --magenta: #d3869b;
     --cyan: #8ec07c;
     --orange: #fe8019;
+	*/
     /* 
     --neutral_red: #cc241d;
     --neutral_green: #98971a;
@@ -89,7 +108,7 @@
 
 /* elements */
 body {
-    background-color: var(--base04);
+    background-color: var(--base03);
     font-family: "Lucidia Console", monospace;
     color: var(--base0);
     font-size: 16px;
@@ -101,7 +120,7 @@ ul {
 }
 
 input {
-    background-color: var(--base04);
+    background-color: var(--base03);
     caret-color: var(--base0);
     outline: none;
     border: none;
@@ -146,7 +165,7 @@ input {
 #search-bar {
     order: 4;
     overflow: hidden;
-    background: var(--base04);
+    background: var(--base03);
     font-family: "Lucidia Console", monospace;
     display: flex;
 }
