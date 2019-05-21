@@ -1,8 +1,0 @@
-{
-    "version": "2.0.0",
-    "command": "Firefox",
-    "windows": {
-        "command": "firefox"
-    }, 
-    "args": ["${file}"]
-}
