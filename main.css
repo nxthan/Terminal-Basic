@@ -77,6 +77,24 @@
     --faded_aqua: #427b58;
     --faded_orange: #af3a03; 
     */
+    /* cyberpunk */
+    --base04: black;
+    --base03: black;
+    --base02: black;
+    --base01: grey;
+    --base00: grey;
+    --base0: white;
+    --base1: #928374;
+    --base2: #f9f5d7;
+    --base3: #f2e5bc;
+    --red: #ff00ea;
+    --green: #ff00ea;
+    --yellow: #fabd2f;
+    --blue: #00ffea;
+    --magenta: #ff00ea;
+    --cyan: #00ffea;
+    --orange: #00ffea;
+	
 }
 
 
