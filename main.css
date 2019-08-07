@@ -77,7 +77,8 @@
     --faded_aqua: #427b58;
     --faded_orange: #af3a03; 
     */
-    /* cyberpunk */
+    /* cyberpunk black */
+    /*
     --base04: black;
     --base03: black;
     --base02: black;
@@ -94,6 +95,25 @@
     --magenta: #ff00ea;
     --cyan: #00ffea;
     --orange: #00ffea;
+    */
+
+    /* cyberpunk low contrast */
+    --base04: #110511;
+    --base03: #110511;
+    --base02: #110511;
+    --base01: #2E243D;
+    --base00: #2E243D;
+    --base0: #706970;
+    --base1: #706970;
+    --base2: #ffffff;
+    --base3: #ffffff;
+    --red: #930a6d;
+    --green: #12BC00;
+    --yellow: #12BC00;
+    --blue: #00b7c3;
+    --magenta: #ea0eaa;
+    --cyan: #00b7c3;
+    --orange: #00b7c3;
 	
 }
 
