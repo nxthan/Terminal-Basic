@@ -214,6 +214,12 @@ input {
     display: flex;
 }
 
+.music-embed{
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto; /* centering */
+}
+
 .links-container {
     order: 1;
     position: relative;
