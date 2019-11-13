@@ -114,35 +114,33 @@ cyberpunkLowContrast = {
     orange:  "#00b7c3"
 }
 
-availableThemes = [solarizedDark, gruvboxDark, cyberpunkBlack, cyberpunkLowContrast];
+availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast];
 
-cycleThemes();
+cycleThemes(0);
 
 // to add 
-//var themesButton = document.getElementById("themes"); 
-//themesButton.addEventListener("click", cycleThemes, false);
+var themesButton = document.getElementById("themes"); 
+themesButton.addEventListener("click", cycleThemes, false);
 
-function cycleThemes() {
-    // all this does right nowis set the them to solarized dark but some of the headings are brokens
+function cycleThemes(themeIndex=(Math.floor(Math.random() * availableThemes.length))) {
 
-    //randTheme = Math.random(availableThemes.length);
+    document.documentElement.style.setProperty('--base04',  availableThemes[themeIndex].base04);
+    document.documentElement.style.setProperty('--base03',  availableThemes[themeIndex].base03);
+    document.documentElement.style.setProperty('--base02',  availableThemes[themeIndex].base02);
+    document.documentElement.style.setProperty('--base01',  availableThemes[themeIndex].base01);
+    document.documentElement.style.setProperty('--base00',  availableThemes[themeIndex].base00);
+    document.documentElement.style.setProperty('--dark1',   availableThemes[themeIndex].dark1);
+    document.documentElement.style.setProperty('--dark2',   availableThemes[themeIndex].dark2);
+    document.documentElement.style.setProperty('--base0',   availableThemes[themeIndex].base0);
+    document.documentElement.style.setProperty('--base1',   availableThemes[themeIndex].base1);
+    document.documentElement.style.setProperty('--base2',   availableThemes[themeIndex].base2);
+    document.documentElement.style.setProperty('--base3',   availableThemes[themeIndex].base3);
+    document.documentElement.style.setProperty('--red',     availableThemes[themeIndex].red);
+    document.documentElement.style.setProperty('--green',   availableThemes[themeIndex].green);
+    document.documentElement.style.setProperty('--yellow',  availableThemes[themeIndex].yellow);
+    document.documentElement.style.setProperty('--blue',    availableThemes[themeIndex].blue);
+    document.documentElement.style.setProperty('--magenta', availableThemes[themeIndex].magenta);
+    document.documentElement.style.setProperty('--cyan',    availableThemes[themeIndex].cyan);
+    document.documentElement.style.setProperty('--orange',  availableThemes[themeIndex].orange);
 
-    document.documentElement.style.setProperty('--base04', solarizedDark.base04);
-    document.documentElement.style.setProperty('--base03', solarizedDark.base03);
-    document.documentElement.style.setProperty('--base02', solarizedDark.base02);
-    document.documentElement.style.setProperty('--base01', solarizedDark.base01);
-    document.documentElement.style.setProperty('--base00', solarizedDark.base00);
-    document.documentElement.style.setProperty('--dark1', solarizedDark.dark1);
-    document.documentElement.style.setProperty('--dark2', solarizedDark.dark2);
-    document.documentElement.style.setProperty('--base0', solarizedDark.base0);
-    document.documentElement.style.setProperty('--base1', solarizedDark.base1);
-    document.documentElement.style.setProperty('--base2', solarizedDark.base2);
-    document.documentElement.style.setProperty('--base3', solarizedDark.base3);
-    document.documentElement.style.setProperty('--red', solarizedDark.red);
-    document.documentElement.style.setProperty('--green', solarizedDark.green);
-    document.documentElement.style.setProperty('--yellow', solarizedDark.yellow);
-    document.documentElement.style.setProperty('--blue', solarizedDark.blue);
-    document.documentElement.style.setProperty('--magenta', solarizedDark.magenta);
-    document.documentElement.style.setProperty('--cyan', solarizedDark.cyan);
-    document.documentElement.style.setProperty('--orange', solarizedDark.orange);
 }
