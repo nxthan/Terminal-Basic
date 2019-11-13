@@ -17,7 +17,6 @@
     --magenta: magenta;
     --cyan: cyan;
     --orange: orange;
-	
 }
 
 
@@ -269,4 +268,17 @@ a:active {
 
 #gaming-h {
     color: var(--blue);
+}
+
+#themes {
+    background-color: var(--base03);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 0;
 }

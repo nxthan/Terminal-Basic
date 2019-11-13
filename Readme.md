@@ -1,13 +1,15 @@
 # Readme
+
 ## Terminal Basic
 
 A browser startpage heavily inspired by an original design by kopri@unixhub.net (which can be found [here](https://startpages.github.io/startpages/Startpage_kopri-nb/))
 
 No code was shared between the two. I treated this as a practice exercise. Everything was done from scratch.
 
-## Theming
+## Theming (no longer works like this!)
 
-the following color shchemes are supported
+the following color schemes are supported
+
 1. Solarized Dark
 2. Gruvbox Dark
 
@@ -25,13 +27,14 @@ The css variables are found at the top of main.css
 
 - add music embed
 - overhaul styling
-- allow switchable themes
+- allow switchable themes (in progress)
+	- fix button styling and selection of themes
 - better link organization/addition and deletion
 - bookmark search?
 - improve search bar
 - animations
 - add icon
 
-## note:
+## note
 
-this was only tested with firefox quantum 
+this was only tested with firefox quantum.

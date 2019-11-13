@@ -116,30 +116,33 @@ cyberpunkLowContrast = {
 
 availableThemes = [solarizedDark, gruvboxDark, cyberpunkBlack, cyberpunkLowContrast];
 
-//cycleThemes();
+cycleThemes();
 
-var themesButton = document.getElementById("themes"); 
-themesButton.addEventListener("click", cycleThemes, false);
+// to add 
+//var themesButton = document.getElementById("themes"); 
+//themesButton.addEventListener("click", cycleThemes, false);
 
 function cycleThemes() {
-    randTheme = Math.random(availableThemes.length);
+    // all this does right nowis set the them to solarized dark but some of the headings are brokens
 
-    document.documentElement.style.setProperty('--base04',  availableThemes[randTheme].base04);
-    document.documentElement.style.setProperty('--base03',  availableThemes[randTheme].base03);
-    document.documentElement.style.setProperty('--base02',  availableThemes[randTheme].base02);
-    document.documentElement.style.setProperty('--base01',  availableThemes[randTheme].base01);
-    document.documentElement.style.setProperty('--base00',  availableThemes[randTheme].base00);
-    document.documentElement.style.setProperty('--dark1',   availableThemes[randTheme].dark1);
-    document.documentElement.style.setProperty('--dark2',   availableThemes[randTheme].dark2);
-    document.documentElement.style.setProperty('--base0 ',  availableThemes[randTheme].base0);
-    document.documentElement.style.setProperty('--base1 ',  availableThemes[randTheme].base1);
-    document.documentElement.style.setProperty('--base2 ',  availableThemes[randTheme].base2);
-    document.documentElement.style.setProperty('--base3 ',  availableThemes[randTheme].base3);
-    document.documentElement.style.setProperty('--red   ',  availableThemes[randTheme].red);
-    document.documentElement.style.setProperty('--green ',  availableThemes[randTheme].green);
-    document.documentElement.style.setProperty('--yellow',  availableThemes[randTheme].yellow);
-    document.documentElement.style.setProperty('--blue  ',  availableThemes[randTheme].blue);
-    document.documentElement.style.setProperty('--magenta', availableThemes[randTheme].magenta);
-    document.documentElement.style.setProperty('--cyan  ',  availableThemes[randTheme].cyan);
-    document.documentElement.style.setProperty('--orange',  availableThemes[randTheme].orange);
+    //randTheme = Math.random(availableThemes.length);
+
+    document.documentElement.style.setProperty('--base04', solarizedDark.base04);
+    document.documentElement.style.setProperty('--base03', solarizedDark.base03);
+    document.documentElement.style.setProperty('--base02', solarizedDark.base02);
+    document.documentElement.style.setProperty('--base01', solarizedDark.base01);
+    document.documentElement.style.setProperty('--base00', solarizedDark.base00);
+    document.documentElement.style.setProperty('--dark1', solarizedDark.dark1);
+    document.documentElement.style.setProperty('--dark2', solarizedDark.dark2);
+    document.documentElement.style.setProperty('--base0', solarizedDark.base0);
+    document.documentElement.style.setProperty('--base1', solarizedDark.base1);
+    document.documentElement.style.setProperty('--base2', solarizedDark.base2);
+    document.documentElement.style.setProperty('--base3', solarizedDark.base3);
+    document.documentElement.style.setProperty('--red', solarizedDark.red);
+    document.documentElement.style.setProperty('--green', solarizedDark.green);
+    document.documentElement.style.setProperty('--yellow', solarizedDark.yellow);
+    document.documentElement.style.setProperty('--blue', solarizedDark.blue);
+    document.documentElement.style.setProperty('--magenta', solarizedDark.magenta);
+    document.documentElement.style.setProperty('--cyan', solarizedDark.cyan);
+    document.documentElement.style.setProperty('--orange', solarizedDark.orange);
 }
