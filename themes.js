@@ -114,9 +114,43 @@ cyberpunkLowContrast = {
     orange:  "#00b7c3"
 }
 
-availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast];
+materialOcean = {
+    base04:  "#0F111A", 
+    base03:  "#090B10",
+    base02:  "#0F111A",
+    base01:  "#464B5D",
+    base00:  "#3B3F51",
+    base0:   "#8F93A2",
+    base1:   "#8F93A2",
+    base2:   "#ffffff",
+    base3:   "#ffffff",
+    red: "#ff5370",
+    green: "#c3e88d",
+    yellow: "#ffcb6b",
+    blue: "#82aaff",
+    magenta: "#c792ea",
+    cyan: "#89ddff",
+    orange : "#ff5370",
+    
+/* 
+        "white": "#ffffff",
+        "brightBlack": "#546e7a",
+        "orange" : "#ff5370",
+        "brightGreen": "#c3e88d",
+        "brightYellow": "#ffcb6b",
+        "brightBlue": "#82aaff",
+        "brightPurple": "#c792ea",
+        "brightCyan": "#89ddff",
+        "brightWhite": "#ffffff",
+        "background": "#0f111a",
+        "foreground": "#8f93a2"
+*/
 
-cycleThemes(0);
+}
+
+availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean];
+
+cycleThemes(3);
 
 // to add 
 var themesButton = document.getElementById("themes"); 
