@@ -242,6 +242,10 @@ a:active {
 
 /* section headings */
 
+#main-h, #varsity-h, #social-h, #tech-h, #programming-h, #media-h, #gaming-h{
+    font-weight: bold;
+
+}
 #main-h {
     color: var(--magenta);
 }
@@ -270,6 +274,10 @@ a:active {
     color: var(--blue);
 }
 
+#themes {
+    background-color: var(--base03);
+    border: none;
+
 .separators {
     color: var(--base01);
 }
@@ -287,6 +295,7 @@ a:active {
     top: 0;
     right: 0;
 }
+  
 .button:hover {
     background-color: var(--base00);
     color: var(--base03);

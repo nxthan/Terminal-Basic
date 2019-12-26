@@ -147,12 +147,30 @@ materialOcean = {
 */
 
 }
+horizonDark = {
+    base04:  "#1C1E26", 
+    base03:  "#1C1E26", //background
+    base02:  "#1C1E26",
+    base01:  "#4C4D53", //comments
+    base00:  "#4C4D53", // border
+    base0:   "#E4A88A", // text
+    base1:   "#1C1E26",
+    base2:   "#1C1E26",
+    base3:   "#1C1E26",
+    cyan:    "#E95378",
+    blue:    "#A96ECA",
+    yellow:  "#E4A88A",
+    green:   "#24A2AE",
+    magenta: "#A96ECA",
+    red:     "#24A2AE",
+    orange : "#DB8864",
+    
+}
 
-availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean];
+availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean, horizonDark];
 
-cycleThemes(3);
+cycleThemes(4);
 
-// to add 
 var themesButton = document.getElementById("themes"); 
 themesButton.addEventListener("click", cycleThemes, false);
 
