@@ -114,11 +114,6 @@ cyberpunkLowContrast = {
     orange:  "#00b7c3"
 }
 
-<<<<<<< Updated upstream
-availableThemes = [solarizedDark, gruvboxDark, cyberpunkBlack, cyberpunkLowContrast];
-
-cycleThemes();
-=======
 materialOcean = {
     base04:  "#0F111A", 
     base03:  "#090B10",
@@ -162,12 +157,12 @@ horizonDark = {
     base1:   "#1C1E26",
     base2:   "#1C1E26",
     base3:   "#1C1E26",
-    cyan:     "#E95378",
-    blue:   "#A96ECA",
+    cyan:    "#E95378",
+    blue:    "#A96ECA",
     yellow:  "#E4A88A",
-    green:    "#24A2AE",
+    green:   "#24A2AE",
     magenta: "#A96ECA",
-    red:    "#24A2AE",
+    red:     "#24A2AE",
     orange : "#DB8864",
     
 }
@@ -175,33 +170,29 @@ horizonDark = {
 availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean, horizonDark];
 
 cycleThemes(4);
->>>>>>> Stashed changes
 
-// to add 
-//var themesButton = document.getElementById("themes"); 
-//themesButton.addEventListener("click", cycleThemes, false);
+var themesButton = document.getElementById("themes"); 
+themesButton.addEventListener("click", cycleThemes, false);
 
-function cycleThemes() {
-    // all this does right nowis set the them to solarized dark but some of the headings are brokens
+function cycleThemes(themeIndex=(Math.floor(Math.random() * availableThemes.length))) {
 
-    //randTheme = Math.random(availableThemes.length);
+    document.documentElement.style.setProperty('--base04',  availableThemes[themeIndex].base04);
+    document.documentElement.style.setProperty('--base03',  availableThemes[themeIndex].base03);
+    document.documentElement.style.setProperty('--base02',  availableThemes[themeIndex].base02);
+    document.documentElement.style.setProperty('--base01',  availableThemes[themeIndex].base01);
+    document.documentElement.style.setProperty('--base00',  availableThemes[themeIndex].base00);
+    document.documentElement.style.setProperty('--dark1',   availableThemes[themeIndex].dark1);
+    document.documentElement.style.setProperty('--dark2',   availableThemes[themeIndex].dark2);
+    document.documentElement.style.setProperty('--base0',   availableThemes[themeIndex].base0);
+    document.documentElement.style.setProperty('--base1',   availableThemes[themeIndex].base1);
+    document.documentElement.style.setProperty('--base2',   availableThemes[themeIndex].base2);
+    document.documentElement.style.setProperty('--base3',   availableThemes[themeIndex].base3);
+    document.documentElement.style.setProperty('--red',     availableThemes[themeIndex].red);
+    document.documentElement.style.setProperty('--green',   availableThemes[themeIndex].green);
+    document.documentElement.style.setProperty('--yellow',  availableThemes[themeIndex].yellow);
+    document.documentElement.style.setProperty('--blue',    availableThemes[themeIndex].blue);
+    document.documentElement.style.setProperty('--magenta', availableThemes[themeIndex].magenta);
+    document.documentElement.style.setProperty('--cyan',    availableThemes[themeIndex].cyan);
+    document.documentElement.style.setProperty('--orange',  availableThemes[themeIndex].orange);
 
-    document.documentElement.style.setProperty('--base04', solarizedDark.base04);
-    document.documentElement.style.setProperty('--base03', solarizedDark.base03);
-    document.documentElement.style.setProperty('--base02', solarizedDark.base02);
-    document.documentElement.style.setProperty('--base01', solarizedDark.base01);
-    document.documentElement.style.setProperty('--base00', solarizedDark.base00);
-    document.documentElement.style.setProperty('--dark1', solarizedDark.dark1);
-    document.documentElement.style.setProperty('--dark2', solarizedDark.dark2);
-    document.documentElement.style.setProperty('--base0', solarizedDark.base0);
-    document.documentElement.style.setProperty('--base1', solarizedDark.base1);
-    document.documentElement.style.setProperty('--base2', solarizedDark.base2);
-    document.documentElement.style.setProperty('--base3', solarizedDark.base3);
-    document.documentElement.style.setProperty('--red', solarizedDark.red);
-    document.documentElement.style.setProperty('--green', solarizedDark.green);
-    document.documentElement.style.setProperty('--yellow', solarizedDark.yellow);
-    document.documentElement.style.setProperty('--blue', solarizedDark.blue);
-    document.documentElement.style.setProperty('--magenta', solarizedDark.magenta);
-    document.documentElement.style.setProperty('--cyan', solarizedDark.cyan);
-    document.documentElement.style.setProperty('--orange', solarizedDark.orange);
 }
