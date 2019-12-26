@@ -277,6 +277,7 @@ a:active {
 #themes {
     background-color: var(--base03);
     border: none;
+}
 
 .separators {
     color: var(--base01);
