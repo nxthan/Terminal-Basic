@@ -242,37 +242,66 @@ a:active {
 
 /* section headings */
 
+#main-h, #varsity-h, #social-h, #tech-h, #programming-h, #media-h, #gaming-h{
+    font-weight: bold;
+
+}
 #main-h {
     color: var(--magenta);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #varsity-h {
     color: var(--green);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #social-h {
     color: var(--orange);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #tech-h {
     color: var(--cyan);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #programming-h {
     color: var(--red);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #media-h {
     color: var(--yellow);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
 #gaming-h {
     color: var(--blue);
+    font-size: 13pt;
+    font-weight: bold;
 }
 
+<<<<<<< Updated upstream
 #themes {
     background-color: var(--base03);
     border: none;
+=======
+
+.separators {
+    color: var(--base01);
+}
+
+.button{
+    background-color: transparent;
+    border: 0;
+>>>>>>> Stashed changes
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
