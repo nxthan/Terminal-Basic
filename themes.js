@@ -169,7 +169,7 @@ horizonDark = {
 
 availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean, horizonDark];
 
-cycleThemes(4);
+cycleThemes(2);
 
 var themesButton = document.getElementById("themes"); 
 themesButton.addEventListener("click", cycleThemes, false);
