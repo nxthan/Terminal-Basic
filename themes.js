@@ -167,32 +167,15 @@ horizonDark = {
     
 }
 
-availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean, horizonDark];
+const availableThemes = [solarizedDark, gruvboxDark, cyberpunkLowContrast, materialOcean, horizonDark]
+const themes = [
+    'base04', 'base03', 'base02', 'base01', 'dark1', 'dark2', 'base0', 'base1', 'base2', 'base3', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'orange'
+]
 
-cycleThemes(2);
-
-var themesButton = document.getElementById("themes"); 
-themesButton.addEventListener("click", cycleThemes, false);
-
-function cycleThemes(themeIndex=(Math.floor(Math.random() * availableThemes.length))) {
-
-    document.documentElement.style.setProperty('--base04',  availableThemes[themeIndex].base04);
-    document.documentElement.style.setProperty('--base03',  availableThemes[themeIndex].base03);
-    document.documentElement.style.setProperty('--base02',  availableThemes[themeIndex].base02);
-    document.documentElement.style.setProperty('--base01',  availableThemes[themeIndex].base01);
-    document.documentElement.style.setProperty('--base00',  availableThemes[themeIndex].base00);
-    document.documentElement.style.setProperty('--dark1',   availableThemes[themeIndex].dark1);
-    document.documentElement.style.setProperty('--dark2',   availableThemes[themeIndex].dark2);
-    document.documentElement.style.setProperty('--base0',   availableThemes[themeIndex].base0);
-    document.documentElement.style.setProperty('--base1',   availableThemes[themeIndex].base1);
-    document.documentElement.style.setProperty('--base2',   availableThemes[themeIndex].base2);
-    document.documentElement.style.setProperty('--base3',   availableThemes[themeIndex].base3);
-    document.documentElement.style.setProperty('--red',     availableThemes[themeIndex].red);
-    document.documentElement.style.setProperty('--green',   availableThemes[themeIndex].green);
-    document.documentElement.style.setProperty('--yellow',  availableThemes[themeIndex].yellow);
-    document.documentElement.style.setProperty('--blue',    availableThemes[themeIndex].blue);
-    document.documentElement.style.setProperty('--magenta', availableThemes[themeIndex].magenta);
-    document.documentElement.style.setProperty('--cyan',    availableThemes[themeIndex].cyan);
-    document.documentElement.style.setProperty('--orange',  availableThemes[themeIndex].orange);
-
+const cycleThemes = (themeIndex=(Math.floor(Math.random() * availableThemes.length))) => {
+    themes.forEach(theme => {
+        document.documentElement.style.setProperty(`--${theme}`, availableThemes[themeIndex][theme])
+    })
 }
+
+cycleThemes(2)
